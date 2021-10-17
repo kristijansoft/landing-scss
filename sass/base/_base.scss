@@ -1,0 +1,26 @@
+html{
+    font-size: 62.5%;
+
+    @include mediaQuery(big-screen){
+        font-size: 75%; 
+    }
+    @include mediaQuery(tab-land){
+        font-size: 62%; 
+    }
+    @include mediaQuery(tab-port){
+        font-size: 50%; 
+    }
+
+}
+
+*,
+*::after,
+*::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body{
+    box-sizing: border-box;
+}

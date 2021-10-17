@@ -1,0 +1,28 @@
+$color-primary:#55c57a;
+$color-primary-light:#7ed56f;
+$color-primary-dark:#28b485;
+
+$color-secondary-light:#ffb900;
+$color-secondary-dark:#ff7730;
+
+$color-tertiary-light:#2998ff;
+$color-tertiary-dark:#5643fa;
+
+$color-grey:#777;
+$color-gray-light:#f7f7f7;
+$color-gray-light-2:#eee;
+$color-gray-light-3:#333;
+
+$color-white:#fff;
+$color-black:#000;
+
+//grid-variables
+$grid-width:110rem;
+$row-bottom-margin:8rem;
+$col-space:6rem;
+$col-1-of-2:calc((100% - #{$col-space})/2);
+$col-1-of-3:calc((100% - 2 * (#{$col-space}))/3);
+$col-1-of-4:calc((100% - 3 * (#{$col-space}))/4);
+
+//font-size
+$primary-font-size:1.6rem;

@@ -1,0 +1,14 @@
+{
+  "name": "css-tutorial",
+  "version": "1.0.0",
+  "description": "just learning css",
+  "main": "index.js",
+  "scripts": {
+    "sassCompile":"node-sass sass/mainSass.scss css/style.css -w"
+  },
+  "author": "kene",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

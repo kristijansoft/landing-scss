@@ -1,0 +1,96 @@
+.row{
+    max-width: $grid-width;
+    margin: 0 auto;
+    
+    @include mediaQuery(tab-port){
+        max-width: 50% !important;
+        
+       }
+    
+    @include mediaQuery(phone){
+        max-width: 80% !important;
+    }
+
+
+    &:not(:last-child){
+    margin-bottom: $row-bottom-margin;
+    }
+
+    [class^=col-]{
+        @include mediaQuery(tab-port){
+         width: 100% !important;
+         
+        }
+
+        &:not(:last-child){
+            margin-right:o;
+            margin-bottom: $col-space;
+            
+        }
+    }
+    
+    @include clearfix;
+    .col-1-of-2{
+        width: $col-1-of-2;       
+        float: left;
+        
+        &:not(:last-child){
+            margin-right: $col-space;
+            
+        }
+   
+       
+    }
+
+
+    .col-1-of-3{
+        width: $col-1-of-3;
+        float: left;
+        &:not(:last-child){
+            margin-right: $col-space;
+        }
+        
+    }
+
+    .col-2-of-3{
+        width: calc((((100% - 2 * (6rem))/3) * 2) + #{$col-space});
+        float: left;
+        background-color: palevioletred;
+
+
+        &:not(:last-child){
+            margin-right: $col-space;
+        }
+        
+    }
+
+    .col-1-of-4{
+        width: $col-1-of-4;
+        float: left;
+        &:not(:last-child){
+            margin-right: $col-space;
+        }
+        
+    }
+    
+    .col-2-of-4{
+        width: calc((#{$col-1-of-4} * 2) + #{$col-space});
+        float: left;
+        background-color: palevioletred;
+
+        &:not(:last-child){
+            margin-right: $col-space;
+        }   
+    }
+    
+    .col-3-of-4{
+        width: calc(((#{$col-1-of-4} * 3) + (2 * (#{$col-space}))));
+        float: left;
+        background-color: palevioletred;
+
+        &:not(:last-child){
+            margin-right: $col-space;
+        }
+    }
+}
+

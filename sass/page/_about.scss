@@ -1,0 +1,11 @@
+.about-section{
+    background-color: $color-gray-light;
+    padding: 30vh 0;
+    margin-top: -24vh;
+
+    @include mediaQuery(tab-port){
+        margin-bottom: 10rem;
+         
+    }
+}
+

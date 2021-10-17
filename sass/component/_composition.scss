@@ -1,0 +1,77 @@
+.composition{
+    position: relative;
+    width: 100%;
+
+    
+
+    .composition__photo{
+        position: absolute;
+        display: inline-block;
+        outline-offset: 1rem;
+        transition: all .2s;
+        width: 55%;
+        box-shadow: 0 1.5rem 2rem rgba($color-black,.4);
+
+        @include mediaQuery(tab-port){
+            width: 33%; 
+        }        
+    }
+
+    &:hover{
+        .composition__photo{
+            transform: scale(0.95);
+        }    
+    }
+    
+    .composition__photo-p1{
+        top: 0;
+        left:0;
+        z-index: 1;
+
+        &:hover{
+            transform: scale(1.1) translateY(-2rem);
+            z-index: 10;
+            outline: 1rem solid $color-primary;
+
+        }
+        @include mediaQuery(tab-port){
+            top: -1rem;
+            left: 10%; 
+        }
+    }
+    .composition__photo-p2{
+        top: 5rem;
+        right:0;
+        z-index: 2;
+
+        &:hover{
+            transform: scale(1.1) translateY(-2rem);
+            outline: 1rem solid $color-primary;
+            z-index: 10;
+        }
+
+        @include mediaQuery(tab-port){
+            top: -2rem;
+            left:33%;
+        }
+    }
+    .composition__photo-p3{
+        top: 10rem;
+        left:15%;
+
+        
+        &:hover{
+            transform: scale(1.1) translateY(-2rem);
+            outline: 1rem solid $color-primary;
+            z-index: 10;
+        }
+        @include mediaQuery(tab-port){
+            top: -1rem;
+            left:56%;
+        }
+
+    }
+
+
+}
+
